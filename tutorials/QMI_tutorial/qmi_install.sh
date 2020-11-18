@@ -21,6 +21,7 @@ if [ -d $DIR ]; then
     rm -rf $DIR.zip ; fi # for old directory
 
 echo "${YELLOW}Change directory to /tmp/qmi/${SET}"
+mkdir -p /tmp/qmi/files
 cd /tmp/qmi/
 
 echo "${YELLOW}Downloading source files${SET}"
