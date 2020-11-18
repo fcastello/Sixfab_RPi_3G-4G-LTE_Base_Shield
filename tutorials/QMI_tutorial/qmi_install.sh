@@ -12,8 +12,9 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 SET='\033[0m'
 
-DIR=/tmp/qmi/files
+DIR=/tmp/qmi/
 UDHCPC_DIR=/usr/share/udhcpc
+mkdir -p $DIR
 
 echo "${YELLOW}Clean Old Files${SET}"
 if [ -d $DIR ]; then 
@@ -21,7 +22,7 @@ if [ -d $DIR ]; then
     rm -rf $DIR.zip ; fi # for old directory
 
 echo "${YELLOW}Change directory to /tmp/qmi/${SET}"
-mkdir -p /tmp/qmi/files
+
 cd /tmp/qmi/
 
 echo "${YELLOW}Downloading source files${SET}"
