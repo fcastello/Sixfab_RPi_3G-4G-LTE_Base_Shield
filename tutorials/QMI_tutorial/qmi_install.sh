@@ -12,7 +12,7 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 SET='\033[0m'
 
-DIR=/tmp/qmi/
+DIR=/usr/local
 UDHCPC_DIR=/usr/share/udhcpc
 mkdir -p $DIR
 
